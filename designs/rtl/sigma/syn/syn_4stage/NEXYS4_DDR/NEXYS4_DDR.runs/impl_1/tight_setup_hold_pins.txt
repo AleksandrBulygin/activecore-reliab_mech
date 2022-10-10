@@ -1,0 +1,7 @@
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|       Launch Clock       |      Capture Clock       |                                                 Pin                                                      |
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                        sigma/sigma_tile/riscv/gensticky_genpstage_EXEC_TRX_BUF_reg[0][alu_op2_wide][32]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                             sigma/sigma_tile/riscv/gensticky_genpstage_EXEC_TRX_BUF_reg[0][jump_src][0]/D|
+|         clk_out1_sys_clk |         clk_out1_sys_clk |                                    sigma/sigma_tile/genexu_MUL_DIV/riscv_multiplier/result_e2_q_reg[31]/D|
++--------------------------+--------------------------+----------------------------------------------------------------------------------------------------------+

@@ -1,0 +1,48 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: Insufficient data from the input file for $fread
+
+##################################
+#### Loading elf file: C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv
+e_machine: 0x000000f3 (   RISC-V)
+e_phnum: 0x00000001
+---- HEADER: 0 ----
+p_type: 0x00000001
+p_offset: 0x00000000
+p_vaddr: 0x00000000
+p_paddr: 0x00000000
+p_filesz: 0x00000774
+p_memsz: 0x00000774
+p_flags: 0x00000007
+p_align: 0x00001000
+##################################
+
+### SIMULATION STARTED ###
+UDM WR32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 47693811 ps : File "C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/tb/riscv_tb.sv" Line 170
+WARNING: Insufficient data from the input file for $fread
+
+##################################
+#### Loading elf file: C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv
+e_machine: 0x000000f3 (   RISC-V)
+e_phnum: 0x00000001
+---- HEADER: 0 ----
+p_type: 0x00000001
+p_offset: 0x00000000
+p_vaddr: 0x00000000
+p_paddr: 0x00000000
+p_filesz: 0x00000774
+p_memsz: 0x00000774
+p_flags: 0x00000007
+p_align: 0x00001000
+##################################
+
+### SIMULATION STARTED ###
+UDM WR32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 47693811 ps : File "C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/tb/riscv_tb.sv" Line 170
