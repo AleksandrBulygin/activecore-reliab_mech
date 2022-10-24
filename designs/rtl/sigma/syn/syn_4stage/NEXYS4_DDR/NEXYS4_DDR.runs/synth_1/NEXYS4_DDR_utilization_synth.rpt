@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Oct  7 14:15:57 2022
+| Date         : Mon Oct 24 14:04:29 2022
 | Host         : DESKTOP-2FOCHV5 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file NEXYS4_DDR_utilization_synth.rpt -pb NEXYS4_DDR_utilization_synth.pb
 | Design       : NEXYS4_DDR
@@ -27,18 +27,20 @@ Table of Contents
 1. Slice Logic
 --------------
 
-+-------------------------+------+-------+-----------+-------+
-|        Site Type        | Used | Fixed | Available | Util% |
-+-------------------------+------+-------+-----------+-------+
-| Slice LUTs*             | 3973 |     0 |     63400 |  6.27 |
-|   LUT as Logic          | 3973 |     0 |     63400 |  6.27 |
-|   LUT as Memory         |    0 |     0 |     19000 |  0.00 |
-| Slice Registers         | 2647 |     0 |    126800 |  2.09 |
-|   Register as Flip Flop | 2647 |     0 |    126800 |  2.09 |
-|   Register as Latch     |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                |  174 |     0 |     31700 |  0.55 |
-| F8 Muxes                |   55 |     0 |     15850 |  0.35 |
-+-------------------------+------+-------+-----------+-------+
++----------------------------+------+-------+-----------+-------+
+|          Site Type         | Used | Fixed | Available | Util% |
++----------------------------+------+-------+-----------+-------+
+| Slice LUTs*                | 4217 |     0 |     63400 |  6.65 |
+|   LUT as Logic             | 4089 |     0 |     63400 |  6.45 |
+|   LUT as Memory            |  128 |     0 |     19000 |  0.67 |
+|     LUT as Distributed RAM |  128 |     0 |           |       |
+|     LUT as Shift Register  |    0 |     0 |           |       |
+| Slice Registers            | 2648 |     0 |    126800 |  2.09 |
+|   Register as Flip Flop    | 2648 |     0 |    126800 |  2.09 |
+|   Register as Latch        |    0 |     0 |    126800 |  0.00 |
+| F7 Muxes                   |  206 |     0 |     31700 |  0.65 |
+| F8 Muxes                   |   88 |     0 |     15850 |  0.56 |
++----------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
 
@@ -57,7 +59,7 @@ Table of Contents
 | 4     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 4     |          Yes |         Set |            - |
-| 2639  |          Yes |       Reset |            - |
+| 2640  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -148,16 +150,17 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 2639 |        Flop & Latch |
-| LUT6     | 2108 |                 LUT |
-| LUT2     |  739 |                 LUT |
-| LUT5     |  721 |                 LUT |
-| LUT3     |  537 |                 LUT |
-| LUT4     |  479 |                 LUT |
-| MUXF7    |  174 |               MuxFx |
+| FDRE     | 2640 |        Flop & Latch |
+| LUT6     | 2148 |                 LUT |
+| LUT2     |  795 |                 LUT |
+| LUT5     |  653 |                 LUT |
+| LUT3     |  571 |                 LUT |
+| LUT4     |  514 |                 LUT |
+| MUXF7    |  206 |               MuxFx |
 | CARRY4   |  161 |          CarryLogic |
-| LUT1     |  120 |                 LUT |
-| MUXF8    |   55 |               MuxFx |
+| LUT1     |  129 |                 LUT |
+| RAMS64E  |  128 |  Distributed Memory |
+| MUXF8    |   88 |               MuxFx |
 | IBUF     |   19 |                  IO |
 | OBUF     |   17 |                  IO |
 | RAMB36E1 |    8 |        Block Memory |

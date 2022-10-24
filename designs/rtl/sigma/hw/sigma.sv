@@ -77,7 +77,7 @@ sigma_tile #(
 	
 	, .hif(hif)
 	, .xif(xif)
-	, .sw0_i(gpio_bi[8])
+	, .sw0_i(gpio_bi_reg[8])
     , .cpu_irq_code_o(cpu_irq_code)
     , .cpu_irq_ack_o(cpu_irq_ack)
 );
@@ -110,6 +110,7 @@ localparam CSR_SW_ADDR          = 32'h80000004;
 
 logic [31:0] gpio_bo_reg;
 assign gpio_bo = gpio_bo_reg;
+
 logic [31:0] gpio_bi_reg;
 always @(posedge clk_i) gpio_bi_reg <= gpio_bi;
 
@@ -117,11 +118,7 @@ assign xif.ack = xif.req;   // xif always ready to accept request
 logic csr_resp;
 logic [31:0] csr_rdata;
 
-always @(posedge clk_i)
-    begin
-        if(cpu_irq_ack)
-            gpio_bo_reg <= cpu_irq_code;
-    end
+
 
 
 // bus request
@@ -151,6 +148,11 @@ always @(posedge clk_i)
                 csr_rdata <= gpio_bi_reg;
                 end
             end
+        end
+        
+        else begin
+            if(cpu_irq_ack)
+                gpio_bo_reg <= cpu_irq_code;
         end
     end
 

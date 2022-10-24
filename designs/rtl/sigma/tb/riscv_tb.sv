@@ -107,6 +107,7 @@ udm_driver udm;
 localparam CPU_RAM_ADDR         = 32'h00000000;
 localparam CSR_LED_ADDR         = 32'h80000000;
 localparam CSR_SW_ADDR          = 32'h80000004;
+localparam IRQ_EN_ADDR 			= 32'h00100010;
 
 initial
 begin
@@ -115,6 +116,8 @@ begin
 	
 	RESET_ALL();
 	WAIT(1000);
+	
+	udm.wr32(IRQ_EN_ADDR, 32'h4);
 
 	irq_btn = 1'b0;
 	WAIT(100);
@@ -136,6 +139,7 @@ begin
 	SW = 8'h0;
 		
 	udm.rd32(32'h0);
+	
 	
 //	$display($time);
 //        udm.rd32(32'h00006000);

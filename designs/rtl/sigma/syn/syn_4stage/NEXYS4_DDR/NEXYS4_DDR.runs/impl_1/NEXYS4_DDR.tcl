@@ -70,14 +70,14 @@ set rc [catch {
   create_project -in_memory -part xc7a100tcsg324-3
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.cache/wt [current_project]
-  set_property parent.project_path C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.xpr [current_project]
-  set_property ip_output_repo C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.cache/wt [current_project]
+  set_property parent.project_path C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.xpr [current_project]
+  set_property ip_output_repo C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/NEXYS4_DDR.dcp
-  read_ip -quiet C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xci
-  read_xdc C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.xdc
+  add_files -quiet C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/NEXYS4_DDR.dcp
+  read_ip -quiet C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xci
+  read_xdc C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.xdc
   link_design -top NEXYS4_DDR -part xc7a100tcsg324-3
   close_msg_db -file init_design.pb
 } RESULT]

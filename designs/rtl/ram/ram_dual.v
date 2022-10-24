@@ -13,20 +13,11 @@ module ram_dual
     input          we1_i,
     output reg [dat_width-1:0] dat1_o,
 
-    input          clk,
-    
-    input sw0_i,
-    output irq1_o
+    input          clk
   ); 
 
 //(* ram_style="block" *)
 reg [dat_width-1:0] ram [0:mem_size - 1] ;
-reg  parity_bit [0:mem_size - 1] ;
-wire  pb0_r, pb1_r;
-
-
-assign pb1_r = ~((^ram[adr1_i])^sw0_i); // if sw0_i = 1, then pb1_r == not ^ram[adr1_i]
-assign irq1_o = !(pb1_r == parity_bit[adr1_i]);
    
 always @ (posedge clk)
     begin
@@ -34,7 +25,6 @@ always @ (posedge clk)
     if (we0_i)
         begin
         ram[adr0_i] <= dat0_i;
-        parity_bit[adr0_i] <= ^dat0_i;
         end
     end
 
@@ -43,7 +33,6 @@ always @ (posedge clk)
     dat1_o <= ram[adr1_i];        
     if (we1_i)
         ram[adr1_i] <= dat1_i;
-        parity_bit[adr1_i] <= ^dat1_i;
     end
 
 // elf processing

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Fri Oct  7 14:16:55 2022
+| Date         : Mon Oct 24 14:05:26 2022
 | Host         : DESKTOP-2FOCHV5 running 64-bit major release  (build 9200)
 | Command      : report_drc -file NEXYS4_DDR_drc_opted.rpt -pb NEXYS4_DDR_drc_opted.pb -rpx NEXYS4_DDR_drc_opted.rpx
 | Design       : NEXYS4_DDR
@@ -24,7 +24,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 18
+             Violations found: 17
 +-----------+----------+-----------------------------------------------------+------------+
 | Rule      | Severity | Description                                         | Violations |
 +-----------+----------+-----------------------------------------------------+------------+
@@ -32,7 +32,7 @@ Table of Contents
 | DPIP-1    | Warning  | Input pipelining                                    | 4          |
 | DPOP-1    | Warning  | PREG Output pipelining                              | 4          |
 | DPOP-2    | Warning  | MREG Output pipelining                              | 2          |
-| REQP-1839 | Warning  | RAMB36 async control check                          | 7          |
+| REQP-1839 | Warning  | RAMB36 async control check                          | 6          |
 +-----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -112,27 +112,22 @@ Related violations: <none>
 
 REQP-1839#3 Warning
 RAMB36 async control check  
-The RAMB36E1 sigma/sigma_tile/ram/ram_dual/ram_reg_2 has an input control pin sigma/sigma_tile/ram/ram_dual/ram_reg_2/ENARDEN (net: sigma/sigma_tile/ram/ram_dual/ram_reg_2_ENARDEN_cooolgate_en_sig_6) which is driven by a register (sigma/reset_sync/reset_syncbuf_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 sigma/sigma_tile/ram/ram_dual/ram_reg_4 has an input control pin sigma/sigma_tile/ram/ram_dual/ram_reg_4/ENARDEN (net: sigma/sigma_tile/ram/ram_dual/ram_reg_4_ENARDEN_cooolgate_en_sig_4) which is driven by a register (sigma/reset_sync/reset_syncbuf_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#4 Warning
 RAMB36 async control check  
-The RAMB36E1 sigma/sigma_tile/ram/ram_dual/ram_reg_3 has an input control pin sigma/sigma_tile/ram/ram_dual/ram_reg_3/ENARDEN (net: sigma/sigma_tile/ram/ram_dual/ram_reg_3_ENARDEN_cooolgate_en_sig_3) which is driven by a register (sigma/reset_sync/reset_syncbuf_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 sigma/sigma_tile/ram/ram_dual/ram_reg_5 has an input control pin sigma/sigma_tile/ram/ram_dual/ram_reg_5/ENARDEN (net: sigma/sigma_tile/ram/ram_dual/ram_reg_5_ENARDEN_cooolgate_en_sig_3) which is driven by a register (sigma/reset_sync/reset_syncbuf_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#5 Warning
 RAMB36 async control check  
-The RAMB36E1 sigma/sigma_tile/ram/ram_dual/ram_reg_4 has an input control pin sigma/sigma_tile/ram/ram_dual/ram_reg_4/ENARDEN (net: sigma/sigma_tile/ram/ram_dual/ram_reg_4_ENARDEN_cooolgate_en_sig_4) which is driven by a register (sigma/reset_sync/reset_syncbuf_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 sigma/sigma_tile/ram/ram_dual/ram_reg_6 has an input control pin sigma/sigma_tile/ram/ram_dual/ram_reg_6/ENARDEN (net: sigma/sigma_tile/ram/ram_dual/ram_reg_6_ENARDEN_cooolgate_en_sig_6) which is driven by a register (sigma/reset_sync/reset_syncbuf_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1839#6 Warning
 RAMB36 async control check  
-The RAMB36E1 sigma/sigma_tile/ram/ram_dual/ram_reg_5 has an input control pin sigma/sigma_tile/ram/ram_dual/ram_reg_5/ENARDEN (net: sigma/sigma_tile/ram/ram_dual/ram_reg_5_ENARDEN_cooolgate_en_sig_5) which is driven by a register (sigma/reset_sync/reset_syncbuf_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-Related violations: <none>
-
-REQP-1839#7 Warning
-RAMB36 async control check  
-The RAMB36E1 sigma/sigma_tile/ram/ram_dual/ram_reg_6 has an input control pin sigma/sigma_tile/ram/ram_dual/ram_reg_6/ENARDEN (net: sigma/sigma_tile/ram/ram_dual/ram_reg_6_ENARDEN_cooolgate_en_sig_7) which is driven by a register (sigma/reset_sync/reset_syncbuf_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB36E1 sigma/sigma_tile/ram/ram_dual/ram_reg_7 has an input control pin sigma/sigma_tile/ram/ram_dual/ram_reg_7/ENARDEN (net: sigma/sigma_tile/ram/ram_dual/ram_reg_7_ENARDEN_cooolgate_en_sig_5) which is driven by a register (sigma/reset_sync/reset_syncbuf_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 
