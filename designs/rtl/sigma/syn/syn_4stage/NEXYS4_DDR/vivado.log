@@ -20,3 +20,1214 @@ INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/2019.1/data/ip'.
 open_project: Time (s): cpu = 00:00:17 ; elapsed = 00:00:08 . Memory (MB): peak = 733.785 ; gain = 97.461
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'riscv_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj riscv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/debouncer/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual_memsplit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual_memsplit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/reset_sync/reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_multiplier
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_1m2s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_1m2s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m1s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m1s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m3s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module coproc_custom0_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/cpu_stub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_stub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module genexu_MUL_DIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module irq_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_4stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sfr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma_tile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xelab -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 48 differs from formal bit length 32 for port 'gpio_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv:56]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 16 for port 'irq_debounced_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 8 for port 'irq_fifo_genfifo_rdata_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:69]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:75]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:138]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 69, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 75, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" Line 12. Module sigma(CPU="riscv_4stage",UDM_RTX_EXTERNAL_OVERRIDE="YES",DEBOUNCER_FACTOR_POW=2,mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/reset_sync/reset_sync.v" Line 1. Module reset_sync doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/debouncer/debouncer.v" Line 10. Module debouncer(FACTOR_POW=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" Line 19. Module sigma_tile(mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192,CPU="riscv_4stage") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" Line 10. Module irq_adapter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" Line 3. Module genexu_MUL_DIV doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v" Line 42. Module riscv_multiplier doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_divider.v" Line 42. Module riscv_divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" Line 3. Module coproc_custom0_wrapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" Line 9. Module riscv_4stage doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" Line 12. Module arb_2m3s(SFR_BITSEL=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual_memsplit.v" Line 1. Module ram_dual_memsplit(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192,P1_FRAC="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 1. Module ram_dual(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" Line 12. Module sfr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm.v" Line 10. Module udm(BUS_TIMEOUT=104857600,RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_rx.v" Line 10. Module uart_rx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_tx.v" Line 10. Module uart_tx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm_controller.v" Line 10. Module udm_controller(BUS_TIMEOUT=104857600) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_arb_1m2s_sv
+Compiling module xil_defaultlib.MemSplit32
+Compiling module xil_defaultlib.reset_sync
+Compiling module xil_defaultlib.debouncer(FACTOR_POW=2)
+Compiling module xil_defaultlib.irq_adapter_default
+Compiling module xil_defaultlib.riscv_multiplier
+Compiling module xil_defaultlib.riscv_divider
+Compiling module xil_defaultlib.genexu_MUL_DIV
+Compiling module xil_defaultlib.coproc_custom0_wrapper
+Compiling module xil_defaultlib.riscv_4stage
+Compiling module xil_defaultlib.arb_2m3s(SFR_BITSEL=20)
+Compiling module xil_defaultlib.ram_dual(init_type="elf",init_da...
+Compiling module xil_defaultlib.ram_dual_memsplit(init_type="elf...
+Compiling module xil_defaultlib.sfr
+Compiling module xil_defaultlib.sigma_tile(mem_init_data="C:/Use...
+Compiling module xil_defaultlib.uart_rx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.uart_tx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.udm_controller(BUS_TIMEOUT=10485...
+Compiling module xil_defaultlib.udm(BUS_TIMEOUT=104857600,RTX_EX...
+Compiling module xil_defaultlib.sigma(CPU="riscv_4stage",UDM_RTX...
+Compiling module xil_defaultlib.riscv_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot riscv_tb_behav
+
+****** Webtalk v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/xsim.dir/riscv_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/xsim.dir/riscv_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Oct 24 11:46:36 2022. For additional details about this file, please refer to the WebTalk help file at D:/Vivado/2019.1/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 24 11:46:36 2022...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 819.773 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "riscv_tb_behav -key {Behavioral:sim_1:Functional:riscv_tb} -tclbatch {riscv_tb.tcl} -view {C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/riscv_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/riscv_tb_behav.wcfg
+source riscv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: file C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv could not be opened
+ERROR: File descriptor (0) passed to $fread in file C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v at line 68 is not valid.
+Fatal: File C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv not found!
+Time: 0 ps  Iteration: 0  Process: /riscv_tb/sigma/sigma_tile/ram/ram_dual/Initial59_92  File: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+$finish called at time : 0 fs : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 69
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:06 . Memory (MB): peak = 841.590 ; gain = 19.812
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'riscv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:16 ; elapsed = 00:00:25 . Memory (MB): peak = 841.590 ; gain = 21.816
+run all
+
+##################################
+#### Loading elf file: C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv
+e_machine: 0xxxxxxxxx (  UNKNOWN)
+e_phnum: 0xxxxxxxxx
+##################################
+
+### SIMULATION STARTED ###
+UDM WR32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 47693811 ps : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" Line 170
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 847.305 ; gain = 0.000
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'riscv_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj riscv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_1m2s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_1m2s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m1s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m1s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m3s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module coproc_custom0_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/cpu_stub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_stub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module genexu_MUL_DIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module irq_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_4stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sfr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma_tile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xelab -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 48 differs from formal bit length 32 for port 'gpio_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv:56]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 16 for port 'irq_debounced_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 8 for port 'irq_fifo_genfifo_rdata_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:69]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:75]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:138]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 69, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 75, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" Line 12. Module sigma(CPU="riscv_4stage",UDM_RTX_EXTERNAL_OVERRIDE="YES",DEBOUNCER_FACTOR_POW=2,mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/reset_sync/reset_sync.v" Line 1. Module reset_sync doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/debouncer/debouncer.v" Line 10. Module debouncer(FACTOR_POW=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" Line 19. Module sigma_tile(mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192,CPU="riscv_4stage") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" Line 10. Module irq_adapter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" Line 3. Module genexu_MUL_DIV doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v" Line 42. Module riscv_multiplier doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_divider.v" Line 42. Module riscv_divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" Line 3. Module coproc_custom0_wrapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" Line 9. Module riscv_4stage doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" Line 12. Module arb_2m3s(SFR_BITSEL=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual_memsplit.v" Line 1. Module ram_dual_memsplit(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192,P1_FRAC="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 1. Module ram_dual(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" Line 12. Module sfr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm.v" Line 10. Module udm(BUS_TIMEOUT=104857600,RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_rx.v" Line 10. Module uart_rx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_tx.v" Line 10. Module uart_tx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm_controller.v" Line 10. Module udm_controller(BUS_TIMEOUT=104857600) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_arb_1m2s_sv
+Compiling module xil_defaultlib.MemSplit32
+Compiling module xil_defaultlib.reset_sync
+Compiling module xil_defaultlib.debouncer(FACTOR_POW=2)
+Compiling module xil_defaultlib.irq_adapter_default
+Compiling module xil_defaultlib.riscv_multiplier
+Compiling module xil_defaultlib.riscv_divider
+Compiling module xil_defaultlib.genexu_MUL_DIV
+Compiling module xil_defaultlib.coproc_custom0_wrapper
+Compiling module xil_defaultlib.riscv_4stage
+Compiling module xil_defaultlib.arb_2m3s(SFR_BITSEL=20)
+Compiling module xil_defaultlib.ram_dual(init_type="elf",init_da...
+Compiling module xil_defaultlib.ram_dual_memsplit(init_type="elf...
+Compiling module xil_defaultlib.sfr
+Compiling module xil_defaultlib.sigma_tile(mem_init_data="C:/Use...
+Compiling module xil_defaultlib.uart_rx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.uart_tx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.udm_controller(BUS_TIMEOUT=10485...
+Compiling module xil_defaultlib.udm(BUS_TIMEOUT=104857600,RTX_EX...
+Compiling module xil_defaultlib.sigma(CPU="riscv_4stage",UDM_RTX...
+Compiling module xil_defaultlib.riscv_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot riscv_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 847.305 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 847.305 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: file C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv could not be opened
+ERROR: File descriptor (0) passed to $fread in file C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v at line 68 is not valid.
+Fatal: File C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv not found!
+Time: 0 ps  Iteration: 0  Process: /riscv_tb/sigma/sigma_tile/ram/ram_dual/Initial59_92  File: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+$finish called at time : 0 fs : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 69
+relaunch_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:19 . Memory (MB): peak = 847.305 ; gain = 0.000
+run all
+
+##################################
+#### Loading elf file: C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv
+e_machine: 0xxxxxxxxx (  UNKNOWN)
+e_phnum: 0xxxxxxxxx
+##################################
+
+### SIMULATION STARTED ###
+UDM RD32: addr: 0x00000010, data: 0xxxxxxxxx
+UDM WR32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 48022389 ps : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" Line 171
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'riscv_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj riscv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_1m2s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_1m2s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m1s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m1s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m3s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module coproc_custom0_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/cpu_stub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_stub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module genexu_MUL_DIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module irq_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_4stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sfr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma_tile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xelab -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 48 differs from formal bit length 32 for port 'gpio_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv:56]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 16 for port 'irq_debounced_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 8 for port 'irq_fifo_genfifo_rdata_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:69]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:75]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:138]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 69, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 75, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" Line 12. Module sigma(CPU="riscv_4stage",UDM_RTX_EXTERNAL_OVERRIDE="YES",DEBOUNCER_FACTOR_POW=2,mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/reset_sync/reset_sync.v" Line 1. Module reset_sync doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/debouncer/debouncer.v" Line 10. Module debouncer(FACTOR_POW=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" Line 19. Module sigma_tile(mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192,CPU="riscv_4stage") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" Line 10. Module irq_adapter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" Line 3. Module genexu_MUL_DIV doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v" Line 42. Module riscv_multiplier doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_divider.v" Line 42. Module riscv_divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" Line 3. Module coproc_custom0_wrapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" Line 9. Module riscv_4stage doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" Line 12. Module arb_2m3s(SFR_BITSEL=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual_memsplit.v" Line 1. Module ram_dual_memsplit(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192,P1_FRAC="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 1. Module ram_dual(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" Line 12. Module sfr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm.v" Line 10. Module udm(BUS_TIMEOUT=104857600,RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_rx.v" Line 10. Module uart_rx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_tx.v" Line 10. Module uart_tx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm_controller.v" Line 10. Module udm_controller(BUS_TIMEOUT=104857600) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_arb_1m2s_sv
+Compiling module xil_defaultlib.MemSplit32
+Compiling module xil_defaultlib.reset_sync
+Compiling module xil_defaultlib.debouncer(FACTOR_POW=2)
+Compiling module xil_defaultlib.irq_adapter_default
+Compiling module xil_defaultlib.riscv_multiplier
+Compiling module xil_defaultlib.riscv_divider
+Compiling module xil_defaultlib.genexu_MUL_DIV
+Compiling module xil_defaultlib.coproc_custom0_wrapper
+Compiling module xil_defaultlib.riscv_4stage
+Compiling module xil_defaultlib.arb_2m3s(SFR_BITSEL=20)
+Compiling module xil_defaultlib.ram_dual(init_type="elf",init_da...
+Compiling module xil_defaultlib.ram_dual_memsplit(init_type="elf...
+Compiling module xil_defaultlib.sfr
+Compiling module xil_defaultlib.sigma_tile(mem_init_data="C:/Use...
+Compiling module xil_defaultlib.uart_rx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.uart_tx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.udm_controller(BUS_TIMEOUT=10485...
+Compiling module xil_defaultlib.udm(BUS_TIMEOUT=104857600,RTX_EX...
+Compiling module xil_defaultlib.sigma(CPU="riscv_4stage",UDM_RTX...
+Compiling module xil_defaultlib.riscv_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot riscv_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 847.305 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 847.305 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: file C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv could not be opened
+ERROR: File descriptor (0) passed to $fread in file C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v at line 68 is not valid.
+Fatal: File C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv not found!
+Time: 0 ps  Iteration: 0  Process: /riscv_tb/sigma/sigma_tile/ram/ram_dual/Initial59_92  File: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+$finish called at time : 0 fs : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 69
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:15 . Memory (MB): peak = 847.305 ; gain = 0.000
+run all
+
+##################################
+#### Loading elf file: C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv
+e_machine: 0xxxxxxxxx (  UNKNOWN)
+e_phnum: 0xxxxxxxxx
+##################################
+
+### SIMULATION STARTED ###
+UDM WR32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000010, data: 0xxxxxxxxx
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 48022389 ps : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" Line 172
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'riscv_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj riscv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_1m2s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_1m2s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m1s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m1s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m3s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module coproc_custom0_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/cpu_stub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_stub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module genexu_MUL_DIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module irq_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_4stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sfr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma_tile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xelab -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 48 differs from formal bit length 32 for port 'gpio_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv:56]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 16 for port 'irq_debounced_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 8 for port 'irq_fifo_genfifo_rdata_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:69]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:75]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:138]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 69, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 75, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" Line 12. Module sigma(CPU="riscv_4stage",UDM_RTX_EXTERNAL_OVERRIDE="YES",DEBOUNCER_FACTOR_POW=2,mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/reset_sync/reset_sync.v" Line 1. Module reset_sync doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/debouncer/debouncer.v" Line 10. Module debouncer(FACTOR_POW=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" Line 19. Module sigma_tile(mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192,CPU="riscv_4stage") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" Line 10. Module irq_adapter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" Line 3. Module genexu_MUL_DIV doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v" Line 42. Module riscv_multiplier doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_divider.v" Line 42. Module riscv_divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" Line 3. Module coproc_custom0_wrapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" Line 9. Module riscv_4stage doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" Line 12. Module arb_2m3s(SFR_BITSEL=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual_memsplit.v" Line 1. Module ram_dual_memsplit(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192,P1_FRAC="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 1. Module ram_dual(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" Line 12. Module sfr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm.v" Line 10. Module udm(BUS_TIMEOUT=104857600,RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_rx.v" Line 10. Module uart_rx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_tx.v" Line 10. Module uart_tx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm_controller.v" Line 10. Module udm_controller(BUS_TIMEOUT=104857600) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_arb_1m2s_sv
+Compiling module xil_defaultlib.MemSplit32
+Compiling module xil_defaultlib.reset_sync
+Compiling module xil_defaultlib.debouncer(FACTOR_POW=2)
+Compiling module xil_defaultlib.irq_adapter_default
+Compiling module xil_defaultlib.riscv_multiplier
+Compiling module xil_defaultlib.riscv_divider
+Compiling module xil_defaultlib.genexu_MUL_DIV
+Compiling module xil_defaultlib.coproc_custom0_wrapper
+Compiling module xil_defaultlib.riscv_4stage
+Compiling module xil_defaultlib.arb_2m3s(SFR_BITSEL=20)
+Compiling module xil_defaultlib.ram_dual(init_type="elf",init_da...
+Compiling module xil_defaultlib.ram_dual_memsplit(init_type="elf...
+Compiling module xil_defaultlib.sfr
+Compiling module xil_defaultlib.sigma_tile(mem_init_data="C:/Use...
+Compiling module xil_defaultlib.uart_rx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.uart_tx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.udm_controller(BUS_TIMEOUT=10485...
+Compiling module xil_defaultlib.udm(BUS_TIMEOUT=104857600,RTX_EX...
+Compiling module xil_defaultlib.sigma(CPU="riscv_4stage",UDM_RTX...
+Compiling module xil_defaultlib.riscv_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot riscv_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 847.305 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 847.305 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: file C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv could not be opened
+ERROR: File descriptor (0) passed to $fread in file C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v at line 68 is not valid.
+Fatal: File C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv not found!
+Time: 0 ps  Iteration: 0  Process: /riscv_tb/sigma/sigma_tile/ram/ram_dual/Initial59_92  File: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+$finish called at time : 0 fs : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 69
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 847.305 ; gain = 0.000
+run all
+
+##################################
+#### Loading elf file: C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv
+e_machine: 0xxxxxxxxx (  UNKNOWN)
+e_phnum: 0xxxxxxxxx
+##################################
+
+### SIMULATION STARTED ###
+UDM WR32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00100010, data: 0x00000000
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 48022389 ps : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" Line 172
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'riscv_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj riscv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_1m2s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_1m2s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m1s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m1s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m3s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module coproc_custom0_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/cpu_stub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_stub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module genexu_MUL_DIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module irq_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_4stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sfr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma_tile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xelab -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-2991] 'wd32' is not declared under prefix 'udm' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv:120]
+WARNING: [VRFC 10-3091] actual bit length 48 differs from formal bit length 32 for port 'gpio_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv:56]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 16 for port 'irq_debounced_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 8 for port 'irq_fifo_genfifo_rdata_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+ERROR: [Common 17-69] Command failed: ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+
+relaunch_sim
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'riscv_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj riscv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_1m2s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_1m2s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m1s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m1s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m3s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module coproc_custom0_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/cpu_stub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_stub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module genexu_MUL_DIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module irq_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_4stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sfr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma_tile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xelab -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 48 differs from formal bit length 32 for port 'gpio_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv:56]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 16 for port 'irq_debounced_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 8 for port 'irq_fifo_genfifo_rdata_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:69]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:75]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:138]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 69, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 75, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" Line 12. Module sigma(CPU="riscv_4stage",UDM_RTX_EXTERNAL_OVERRIDE="YES",DEBOUNCER_FACTOR_POW=2,mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/reset_sync/reset_sync.v" Line 1. Module reset_sync doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/debouncer/debouncer.v" Line 10. Module debouncer(FACTOR_POW=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" Line 19. Module sigma_tile(mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192,CPU="riscv_4stage") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" Line 10. Module irq_adapter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" Line 3. Module genexu_MUL_DIV doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v" Line 42. Module riscv_multiplier doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_divider.v" Line 42. Module riscv_divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" Line 3. Module coproc_custom0_wrapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" Line 9. Module riscv_4stage doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" Line 12. Module arb_2m3s(SFR_BITSEL=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual_memsplit.v" Line 1. Module ram_dual_memsplit(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192,P1_FRAC="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 1. Module ram_dual(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" Line 12. Module sfr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm.v" Line 10. Module udm(BUS_TIMEOUT=104857600,RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_rx.v" Line 10. Module uart_rx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_tx.v" Line 10. Module uart_tx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm_controller.v" Line 10. Module udm_controller(BUS_TIMEOUT=104857600) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_arb_1m2s_sv
+Compiling module xil_defaultlib.MemSplit32
+Compiling module xil_defaultlib.reset_sync
+Compiling module xil_defaultlib.debouncer(FACTOR_POW=2)
+Compiling module xil_defaultlib.irq_adapter_default
+Compiling module xil_defaultlib.riscv_multiplier
+Compiling module xil_defaultlib.riscv_divider
+Compiling module xil_defaultlib.genexu_MUL_DIV
+Compiling module xil_defaultlib.coproc_custom0_wrapper
+Compiling module xil_defaultlib.riscv_4stage
+Compiling module xil_defaultlib.arb_2m3s(SFR_BITSEL=20)
+Compiling module xil_defaultlib.ram_dual(init_type="elf",init_da...
+Compiling module xil_defaultlib.ram_dual_memsplit(init_type="elf...
+Compiling module xil_defaultlib.sfr
+Compiling module xil_defaultlib.sigma_tile(mem_init_data="C:/Use...
+Compiling module xil_defaultlib.uart_rx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.uart_tx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.udm_controller(BUS_TIMEOUT=10485...
+Compiling module xil_defaultlib.udm(BUS_TIMEOUT=104857600,RTX_EX...
+Compiling module xil_defaultlib.sigma(CPU="riscv_4stage",UDM_RTX...
+Compiling module xil_defaultlib.riscv_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot riscv_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 847.879 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 847.879 ; gain = 0.000
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: file C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv could not be opened
+ERROR: File descriptor (0) passed to $fread in file C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v at line 68 is not valid.
+Fatal: File C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv not found!
+Time: 0 ps  Iteration: 0  Process: /riscv_tb/sigma/sigma_tile/ram/ram_dual/Initial59_92  File: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+$finish called at time : 0 fs : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 69
+relaunch_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:12 . Memory (MB): peak = 847.879 ; gain = 0.000
+run all
+
+##################################
+#### Loading elf file: C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv
+e_machine: 0xxxxxxxxx (  UNKNOWN)
+e_phnum: 0xxxxxxxxx
+##################################
+
+### SIMULATION STARTED ###
+UDM WR32: addr: 0x00100010, data: 0x00000004
+UDM WR32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 48079533 ps : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" Line 174
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Oct 24 12:47:29 2022] Launched synth_1...
+Run output will be captured here: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/runme.log
+[Mon Oct 24 12:47:29 2022] Launched impl_1...
+Run output will be captured here: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'riscv_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj riscv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/debouncer/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual_memsplit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual_memsplit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/reset_sync/reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_multiplier
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm_controller
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xelab -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 48 differs from formal bit length 32 for port 'gpio_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv:56]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 16 for port 'irq_debounced_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 8 for port 'irq_fifo_genfifo_rdata_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:58]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:64]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:127]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 58, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 64, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" Line 12. Module sigma(CPU="riscv_4stage",UDM_RTX_EXTERNAL_OVERRIDE="YES",DEBOUNCER_FACTOR_POW=2,mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/reset_sync/reset_sync.v" Line 1. Module reset_sync doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/debouncer/debouncer.v" Line 10. Module debouncer(FACTOR_POW=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" Line 19. Module sigma_tile(mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192,CPU="riscv_4stage") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" Line 10. Module irq_adapter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" Line 3. Module genexu_MUL_DIV doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v" Line 42. Module riscv_multiplier doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_divider.v" Line 42. Module riscv_divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" Line 3. Module coproc_custom0_wrapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" Line 9. Module riscv_4stage doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" Line 12. Module arb_2m3s(SFR_BITSEL=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual_memsplit.v" Line 1. Module ram_dual_memsplit(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192,P1_FRAC="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 1. Module ram_dual(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" Line 12. Module sfr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm.v" Line 10. Module udm(BUS_TIMEOUT=104857600,RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_rx.v" Line 10. Module uart_rx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_tx.v" Line 10. Module uart_tx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm_controller.v" Line 10. Module udm_controller(BUS_TIMEOUT=104857600) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_arb_1m2s_sv
+Compiling module xil_defaultlib.MemSplit32
+Compiling module xil_defaultlib.reset_sync
+Compiling module xil_defaultlib.debouncer(FACTOR_POW=2)
+Compiling module xil_defaultlib.irq_adapter_default
+Compiling module xil_defaultlib.riscv_multiplier
+Compiling module xil_defaultlib.riscv_divider
+Compiling module xil_defaultlib.genexu_MUL_DIV
+Compiling module xil_defaultlib.coproc_custom0_wrapper
+Compiling module xil_defaultlib.riscv_4stage
+Compiling module xil_defaultlib.arb_2m3s(SFR_BITSEL=20)
+Compiling module xil_defaultlib.ram_dual(init_type="elf",init_da...
+Compiling module xil_defaultlib.ram_dual_memsplit(init_type="elf...
+Compiling module xil_defaultlib.sfr
+Compiling module xil_defaultlib.sigma_tile(mem_init_data="C:/Use...
+Compiling module xil_defaultlib.uart_rx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.uart_tx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.udm_controller(BUS_TIMEOUT=10485...
+Compiling module xil_defaultlib.udm(BUS_TIMEOUT=104857600,RTX_EX...
+Compiling module xil_defaultlib.sigma(CPU="riscv_4stage",UDM_RTX...
+Compiling module xil_defaultlib.riscv_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot riscv_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 907.410 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '8' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "riscv_tb_behav -key {Behavioral:sim_1:Functional:riscv_tb} -tclbatch {riscv_tb.tcl} -view {C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/riscv_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/riscv_tb_behav.wcfg
+source riscv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: file C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv could not be opened
+ERROR: File descriptor (0) passed to $fread in file C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v at line 57 is not valid.
+Fatal: File C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv not found!
+Time: 0 ps  Iteration: 0  Process: /riscv_tb/sigma/sigma_tile/ram/ram_dual/Initial48_93  File: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+$finish called at time : 0 fs : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 58
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'riscv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:17 . Memory (MB): peak = 907.410 ; gain = 0.000
+run all
+
+##################################
+#### Loading elf file: C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv
+e_machine: 0xxxxxxxxx (  UNKNOWN)
+e_phnum: 0xxxxxxxxx
+##################################
+
+### SIMULATION STARTED ###
+UDM WR32: addr: 0x00100010, data: 0x00000004
+UDM WR32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 48079533 ps : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" Line 174
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'D:/Vivado/2019.1/data/xsim/xsim.ini' copied to run dir:'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'riscv_tb' in fileset 'sim_1'...
+WARNING: [SIM-utils-52] IP component XML file does not exist: 'c:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.srcs/sources_1/ip/sys_clk/sys_clk.xml'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj riscv_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/debouncer/debouncer.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debouncer
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual_memsplit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ram_dual_memsplit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/reset_sync/reset_sync.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module reset_sync
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_divider.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_divider
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_multiplier
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm_controller.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module udm_controller
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_1m2s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_1m2s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m1s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m1s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module arb_2m3s
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module coproc_custom0_wrapper
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/cpu_stub.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module cpu_stub
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module genexu_MUL_DIV
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module irq_adapter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_4stage
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sfr
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sigma_tile
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module riscv_tb
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+"xelab -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: D:/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 783e97e2ccdd4ee09b45ca8a87a6dff8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot riscv_tb_behav xil_defaultlib.riscv_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-3091] actual bit length 48 differs from formal bit length 32 for port 'gpio_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv:56]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 16 for port 'irq_debounced_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-3091] actual bit length 36 differs from formal bit length 8 for port 'irq_fifo_genfifo_rdata_bi' [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv:76]
+WARNING: [VRFC 10-526] concatenation with unsized literal; will interpret as 32 bits [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv:353]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:58]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:64]
+WARNING: [VRFC 10-696] first argument of $fatal is invalid, expecting 0, 1 or 2 [C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v:127]
+Completed static elaboration
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 58, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+INFO: [XSIM 43-4329] Assuming default value 1 for the first arguement of $fatal at Line 64, File C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/hw/sigma.sv" Line 12. Module sigma(CPU="riscv_4stage",UDM_RTX_EXTERNAL_OVERRIDE="YES",DEBOUNCER_FACTOR_POW=2,mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/reset_sync/reset_sync.v" Line 1. Module reset_sync doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/debouncer/debouncer.v" Line 10. Module debouncer(FACTOR_POW=2) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sigma_tile.sv" Line 19. Module sigma_tile(mem_init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",mem_size=8192,CPU="riscv_4stage") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "../../../../../../../../sigma_tile/hw/sigma_tile.svh" Line 13. Module MemSplit32 doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/irq_adapter.sv" Line 10. Module irq_adapter_default doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/genexu_MUL_DIV.sv" Line 3. Module genexu_MUL_DIV doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_multiplier.v" Line 42. Module riscv_multiplier doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/mul_div/riscv_divider.v" Line 42. Module riscv_divider doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/coproc_custom0_wrapper.sv" Line 3. Module coproc_custom0_wrapper doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/riscv/coregen/riscv_4stage/sverilog/riscv_4stage.sv" Line 9. Module riscv_4stage doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/arb_2m3s.sv" Line 12. Module arb_2m3s(SFR_BITSEL=20) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual_memsplit.v" Line 1. Module ram_dual_memsplit(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192,P1_FRAC="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 1. Module ram_dual(init_type="elf",init_data="C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv",adr_width=30,mem_size=8192) doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma_tile/hw/sfr.sv" Line 12. Module sfr doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm.v" Line 10. Module udm(BUS_TIMEOUT=104857600,RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_rx.v" Line 10. Module uart_rx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/uart_tx.v" Line 10. Module uart_tx(RTX_EXTERNAL_OVERRIDE="YES") doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/udm/hw/udm_controller.v" Line 10. Module udm_controller(BUS_TIMEOUT=104857600) doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xil_defaultlib.$unit_arb_1m2s_sv
+Compiling module xil_defaultlib.MemSplit32
+Compiling module xil_defaultlib.reset_sync
+Compiling module xil_defaultlib.debouncer(FACTOR_POW=2)
+Compiling module xil_defaultlib.irq_adapter_default
+Compiling module xil_defaultlib.riscv_multiplier
+Compiling module xil_defaultlib.riscv_divider
+Compiling module xil_defaultlib.genexu_MUL_DIV
+Compiling module xil_defaultlib.coproc_custom0_wrapper
+Compiling module xil_defaultlib.riscv_4stage
+Compiling module xil_defaultlib.arb_2m3s(SFR_BITSEL=20)
+Compiling module xil_defaultlib.ram_dual(init_type="elf",init_da...
+Compiling module xil_defaultlib.ram_dual_memsplit(init_type="elf...
+Compiling module xil_defaultlib.sfr
+Compiling module xil_defaultlib.sigma_tile(mem_init_data="C:/Use...
+Compiling module xil_defaultlib.uart_rx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.uart_tx(RTX_EXTERNAL_OVERRIDE="Y...
+Compiling module xil_defaultlib.udm_controller(BUS_TIMEOUT=10485...
+Compiling module xil_defaultlib.udm(BUS_TIMEOUT=104857600,RTX_EX...
+Compiling module xil_defaultlib.sigma(CPU="riscv_4stage",UDM_RTX...
+Compiling module xil_defaultlib.riscv_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot riscv_tb_behav
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 943.262 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "riscv_tb_behav -key {Behavioral:sim_1:Functional:riscv_tb} -tclbatch {riscv_tb.tcl} -view {C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/riscv_tb_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+open_wave_config C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/riscv_tb_behav.wcfg
+source riscv_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+WARNING: file C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv could not be opened
+ERROR: File descriptor (0) passed to $fread in file C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v at line 57 is not valid.
+Fatal: File C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv not found!
+Time: 0 ps  Iteration: 0  Process: /riscv_tb/sigma/sigma_tile/ram/ram_dual/Initial48_93  File: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v
+$finish called at time : 0 fs : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/ram/ram_dual.v" Line 58
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'riscv_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 957.895 ; gain = 14.633
+run all
+
+##################################
+#### Loading elf file: C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv
+e_machine: 0xxxxxxxxx (  UNKNOWN)
+e_phnum: 0xxxxxxxxx
+##################################
+
+### SIMULATION STARTED ###
+UDM WR32: addr: 0x00100010, data: 0x00000004
+UDM WR32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 48079533 ps : File "C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" Line 174
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Oct 24 13:11:34 2022] Launched synth_1...
+Run output will be captured here: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/runme.log
+[Mon Oct 24 13:11:34 2022] Launched impl_1...
+Run output will be captured here: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/runme.log
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.1
+  **** Build date : May 24 2019 at 15:13:31
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292710640A
+open_hw_target: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2359.359 ; gain = 880.523
+set_property PROGRAM.FILE {C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Oct 24 13:54:14 2022] Launched synth_1...
+Run output will be captured here: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/runme.log
+[Mon Oct 24 13:54:14 2022] Launched impl_1...
+Run output will be captured here: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/runme.log
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292710640A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292710640A
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292710640A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292710640A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Mon Oct 24 14:02:27 2022] Launched synth_1...
+Run output will be captured here: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/runme.log
+[Mon Oct 24 14:02:27 2022] Launched impl_1...
+Run output will be captured here: C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292710640A
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292710640A
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 24 14:14:05 2022...

@@ -11,3 +11,66 @@
 #-----------------------------------------------------------
 start_gui
 open_project C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/riscv_tb_behav.wcfg
+source riscv_tb.tcl
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+run all
+relaunch_sim
+relaunch_sim
+run all
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_sim
+launch_simulation
+open_wave_config C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/riscv_tb_behav.wcfg
+source riscv_tb.tcl
+run all
+close_sim
+launch_simulation
+open_wave_config C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/riscv_tb_behav.wcfg
+source riscv_tb.tcl
+run all
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_sim
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/admin/Desktop/Projects/activecore-reliab_mech/designs/rtl/sigma/syn/syn_4stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/NEXYS4_DDR.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]

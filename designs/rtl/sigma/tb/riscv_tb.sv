@@ -130,15 +130,15 @@ begin
 	
 	udm.wr32(32'h0, 32'hdeadbeef);
 	
-	SW = 8'h1;
+	SW = 8'h0;
 		
 	udm.rd32(32'h0);
 	
 	WAIT(100);
 	
-	SW = 8'h0;
+	SW = 8'h1;
 		
-	udm.rd32(32'h0);
+	//udm.rd32(32'h0);
 	
 	
 //	$display($time);
