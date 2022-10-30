@@ -32,10 +32,10 @@ reg irq_btn;
 	
 sigma
 #(
-	//.CPU("riscv_1stage")
+	.CPU("riscv_1stage")
 	//.CPU("riscv_2stage")
 	//.CPU("riscv_3stage")
-	.CPU("riscv_4stage")
+	//.CPU("riscv_4stage")
 	//.CPU("riscv_5stage")
 	//.CPU("riscv_6stage")
 
@@ -43,7 +43,7 @@ sigma
 	, .DEBOUNCER_FACTOR_POW(2)
 	, .delay_test_flag(0)
 	
-	, .mem_init_type("elf")
+	, .mem_init_type("none")
 	, .mem_init_data("C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv")
 	, .mem_size(8192)
 ) sigma
@@ -119,56 +119,38 @@ begin
 	
 	udm.wr32(IRQ_EN_ADDR, 32'h4);
 
-	irq_btn = 1'b0;
+	/*irq_btn = 1'b0;
 	WAIT(100);
 	irq_btn = 1'b0;
 	WAIT(50);
-	
+	*/
 	udm.check();
 	//udm.hreset();
 	WAIT(2000);
 	
-	udm.wr32(32'h0, 32'hdeadbeef);
-	
 	SW = 8'h0;
+	
+	udm.wr32(32'h0, 32'hdeadbeef);
 		
 	udm.rd32(32'h0);
 	
-	WAIT(100);
+	WAIT(28);
 	
 	SW = 8'h1;
-		
-	//udm.rd32(32'h0);
 	
+	WAIT(28);
 	
-//	$display($time);
-//        udm.rd32(32'h00006000);
-//        udm.rd32(32'h00006004);
-//        udm.rd32(32'h00006008);
-//        udm.rd32(32'h0000600c);
-//        udm.rd32(32'h00006010);
-//        udm.rd32(32'h00006014);
-//        udm.rd32(32'h00006018);
-//        udm.rd32(32'h0000601c);
-//        udm.rd32(32'h00006020);
-//        udm.rd32(32'h00006024);
-//        udm.rd32(32'h00006028);
-//        udm.rd32(32'h0000602c);
-//        udm.rd32(32'h00006030);
-//        udm.rd32(32'h00006034);
-//        udm.rd32(32'h00006038);
-//        udm.rd32(32'h0000603c);
-//        udm.rd32(32'h00006040);
-//        udm.rd32(32'h00006044);
-//        udm.rd32(32'h00006048);
-//        udm.rd32(32'h0000604c);
-//        udm.rd32(32'h00006050);
-//        udm.rd32(32'h00006054);
-//        udm.rd32(32'h00006058);
-//        udm.rd32(32'h0000605c);
-//        udm.rd32(32'h00006060);
+	SW = 8'h0;
 	
-    
+	WAIT(28);
+	
+	SW = 8'h1;
+	
+	WAIT(28);
+	
+	SW = 8'h0;
+	
+	WAIT(28);
     
 	$display ("### TEST PROCEDURE FINISHED ###");
 	$stop;
