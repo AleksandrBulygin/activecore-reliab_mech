@@ -27,7 +27,7 @@ module ram_dual_memsplit
 	output reg [31:0] bus1_rdata_bo,
 	
 	input sw0_i,
-    output bus1_iqr
+    output reg bus1_iqr
   );
 
   
@@ -226,17 +226,18 @@ module ram_dual_memsplit
     
   reg  parity_bit [0:mem_size - 1];
   reg pb1_r;
-  reg sw0;
-  
 
-assign bus1_iqr = !(pb1_r == parity_bit[bus1_addr[31:2]]);
-
-always @ (posedge clk_i)
+    always @ (posedge clk_i) 
     begin
-    sw0 <= sw0_i;
-    pb1_r <= ((^bus1_rdata)^sw0_i); // if sw0_i = 1, then pb1_r == not ^ram[adr1_i]        
-    if (bus1_we)
-        parity_bit[bus1_addr[31:2]] <= ^bus1_wdata;
+        pb1_r <= ((^bus1_rdata)^sw0_i); // if sw0_i = 1, then pb1_r == not ^ram[adr1_i]        
+        if (bus1_we)
+            parity_bit[bus1_addr[31:2]] <= ^bus1_wdata;
+    end
+  
+    always @ (negedge clk_i)
+    begin
+        if(rst_i) bus1_iqr <= 0;
+        else  bus1_iqr <= !(pb1_r == parity_bit[bus1_addr[31:2]]);
     end
   
   
