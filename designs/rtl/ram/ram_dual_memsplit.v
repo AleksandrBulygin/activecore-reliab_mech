@@ -27,7 +27,7 @@ module ram_dual_memsplit
 	output reg [31:0] bus1_rdata_bo,
 	
 	input sw0_i,
-    output reg bus1_iqr
+  output reg bus1_irq
   );
 
   
@@ -236,8 +236,8 @@ module ram_dual_memsplit
   
     always @ (negedge clk_i)
     begin
-        if(rst_i) bus1_iqr <= 0;
-        else  bus1_iqr <= !(pb1_r == parity_bit[bus1_addr[31:2]]);
+        if(rst_i) bus1_irq <= 0;
+        else  bus1_irq <= !(pb1_r == parity_bit[bus1_addr[31:2]]);
     end
   
   
