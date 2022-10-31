@@ -118,8 +118,9 @@ assign xif.ack = xif.req;   // xif always ready to accept request
 logic csr_resp;
 logic [31:0] csr_rdata;
 
-
-
+logic [27:0] irq_show_timer = 28'hfffffff;
+logic [31:0] led_reg;
+logic [31:0] irq_reg;
 
 // bus request
 always @(posedge clk_i)
@@ -132,7 +133,11 @@ always @(posedge clk_i)
         
         if (xif.we)     // writing
             begin
-            if (xif.addr == CSR_LED_ADDR) gpio_bo_reg <= xif.wdata;
+            if (xif.addr == CSR_LED_ADDR) begin
+                led_reg <= xif.wdata;
+                gpio_bo_reg[18:16] <= 010; //green on
+                
+            end
             end
         
         else            // reading
@@ -140,7 +145,7 @@ always @(posedge clk_i)
             if (xif.addr == CSR_LED_ADDR)
                 begin
                 csr_resp <= 1'b1;
-                csr_rdata <= gpio_bo_reg;
+                csr_rdata <= led_reg;
                 end
             if (xif.addr == CSR_SW_ADDR)
                 begin
@@ -151,8 +156,19 @@ always @(posedge clk_i)
         end
         
         else begin
-            if(cpu_irq_ack)
+            if(cpu_irq_ack) begin
                 gpio_bo_reg <= cpu_irq_code;
+                irq_reg <= cpu_irq_code;
+                gpio_bo_reg[18:16] <= 100; //red on
+                irq_show_timer = 0; 
+            end
+            else begin
+                if(irq_show_timer < 28'hfffffff) irq_show_timer += 1;
+                else begin 
+                    gpio_bo_reg <= led_reg;
+                    gpio_bo_reg[18:16] <= 010;
+                end
+            end
         end
     end
 

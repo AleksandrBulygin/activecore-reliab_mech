@@ -6,6 +6,7 @@ module NEXYS4_DDR
     , input   BTNC
     , input   [15:0] SW
     , output  [15:0] LED
+    , output  [2:0] COLOR_LED
 
     , input   UART_TXD_IN
     , output  UART_RXD_OUT
@@ -23,13 +24,13 @@ sys_clk sys_clk
 );
 
 wire arst;
-assign arst = !(CPU_RESETN & pll_locked);
+assign arst = !(CPU_RESETN & pll_locked); 
 
 sigma
 #(
 	.CPU("riscv_1stage")
 	, .delay_test_flag(0)
-	, .mem_init_type("hex")
+	, .mem_init_type("non")
 	, .mem_init_data("../sigma/sw/apps/heartbeat_variable.riscv.hex")
 	, .mem_size(8192)
 ) sigma
@@ -40,7 +41,7 @@ sigma
 	, .rx_i(UART_TXD_IN)
 	, .tx_o(UART_RXD_OUT)
 	, .gpio_bi({8'h0, SW, 8'h0})
-	, .gpio_bo(LED)
+	, .gpio_bo({COLOR_LED, LED})
 );
 
 endmodule
