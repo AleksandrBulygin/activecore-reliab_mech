@@ -1,0 +1,76 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 24 14:29:02 2022
+# Process ID: 15224
+# Current directory: E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13764 E:\University\University_Projects\2_Magistracy\Security_SoC\activecore-reliab_mech\designs\rtl\sigma\syn\syn_1stage\NEXYS4_DDR\NEXYS4_DDR.xpr
+# Log file: E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/vivado.log
+# Journal file: E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR'
+INFO: [Project 1-313] Project file moved from 'C:/Users/anton/PROJECTS/activecore/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'sys_clk_synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.ip_user_files', nor could it be found using path 'C:/Users/anton/PROJECTS/activecore/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.1/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:13 . Memory (MB): peak = 756.383 ; gain = 156.434
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 3
+[Mon Oct 24 14:38:43 2022] Launched sys_clk_synth_1, synth_1...
+Run output will be captured here:
+sys_clk_synth_1: E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.runs/sys_clk_synth_1/runme.log
+synth_1: E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.runs/synth_1/runme.log
+[Mon Oct 24 14:38:44 2022] Launched impl_1...
+Run output will be captured here: E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+INFO: [Netlist 29-17] Analyzing 407 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1736.340 ; gain = 0.000
+Restored from archive | CPU: 2.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1736.340 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1736.340 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 32 instances
+
+open_run: Time (s): cpu = 00:01:00 ; elapsed = 00:01:00 . Memory (MB): peak = 1861.766 ; gain = 1008.445
+open_report: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1877.906 ; gain = 16.141
+CRITICAL WARNING: [Timing 38-282] The design failed to meet the timing requirements. Please see the timing summary report for details on the timing violations.
+set_property IOSTANDARD LVCMOS33 [get_ports [list {COLOR_LED[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {COLOR_LED[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {COLOR_LED[2]}]]
+startgroup
+set_property package_pin "" [get_ports [list  {SW[4]}]]
+place_ports {COLOR_LED[2]} R17
+endgroup
+place_ports {COLOR_LED[1]} G17
+place_ports {COLOR_LED[2]} N16
+place_ports {COLOR_LED[1]} R11
+place_ports {COLOR_LED[0]} G14
+set_property IOSTANDARD LVCMOS33 [get_ports [list {COLOR_LED[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {COLOR_LED[2]} {COLOR_LED[1]} {COLOR_LED[0]}]]
+place_ports {SW[4]} R17
+set_property target_constrs_file E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.xdc [current_fileset -constrset]
+save_constraints -force
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 24 15:04:03 2022...

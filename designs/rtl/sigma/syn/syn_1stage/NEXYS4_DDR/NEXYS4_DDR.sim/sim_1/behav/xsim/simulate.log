@@ -1,0 +1,26 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+WARNING: Insufficient data from the input file for $fread
+
+##################################
+#### Loading elf file: E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/sw/apps/irq_handler.riscv
+e_machine: 0x000000f3 (   RISC-V)
+e_phnum: 0x00000001
+---- HEADER: 0 ----
+p_type: 0x00000001
+p_offset: 0x00000000
+p_vaddr: 0x00000000
+p_paddr: 0x00000000
+p_filesz: 0x00000554
+p_memsz: 0x00000554
+p_flags: 0x00000007
+p_align: 0x00001000
+##################################
+
+### SIMULATION STARTED ###
+UDM WR32: addr: 0x00100010, data: 0x00000004
+UDM WR32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x00000000, data: 0xdeadbeef
+UDM RD32: addr: 0x80000000, data: 0x00040002
+### TEST PROCEDURE FINISHED ###
+$stop called at time : 74951499 ps : File "E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/tb/riscv_tb.sv" Line 143

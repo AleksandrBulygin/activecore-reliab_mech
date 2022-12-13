@@ -42,8 +42,8 @@ module sigma_tile
     , MemSplit32.Master xif    // expansion interface
     
     , input sw0_i
-    , output logic [IRQ_NUM_POW-1:0] cpu_irq_code_o
-    , output logic cpu_irq_ack_o
+    //, output logic [IRQ_NUM_POW-1:0] cpu_irq_code_o
+    //, output logic cpu_irq_ack_o
 );
 
     localparam XIF_BITSEL  = 31;
@@ -60,17 +60,17 @@ module sigma_tile
     logic cpu_irq_req;
     logic [IRQ_NUM_POW-1:0] cpu_irq_code;
     logic cpu_irq_ack;
-    logic bus1_iqr;
+    logic bus1_irq;
     
-    assign cpu_irq_code_o = cpu_irq_code;
-    assign cpu_irq_ack_o = cpu_irq_ack;
+    //assign cpu_irq_code_o = cpu_irq_code;
+    //assign cpu_irq_ack_o = cpu_irq_ack;
 
     irq_adapter #(
         .IRQ_NUM_POW(IRQ_NUM_POW)
     ) irq_adapter (
         .clk_i(clk_i)
         , .rst_i(core_reset_o)
-        , .irq_debounced_bi((irq_debounced_bi | (irq_timer << 1)| (bus1_iqr << 2)) & irq_en)
+        , .irq_debounced_bi((irq_debounced_bi | (irq_timer << 1)| (bus1_irq << 2)) & irq_en)
         , .sgi_req_i(sgi_req)
         , .sgi_code_bi(sgi_code)
         , .irq_req_o(cpu_irq_req)
@@ -645,7 +645,7 @@ module sigma_tile
 		, .bus1_resp_o	(dmem_if.resp)
 		, .bus1_rdata_bo(dmem_if.rdata)
 		, .sw0_i(sw0_i)
-		, .bus1_iqr(bus1_iqr)
+		, .bus1_irq(bus1_irq)
 	);
 	
     sfr #(

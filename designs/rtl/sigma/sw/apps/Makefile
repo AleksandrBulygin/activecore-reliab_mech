@@ -15,6 +15,7 @@ src_dir = .
 #--------------------------------------------------------------------
 
 bmarks = \
+	irq_handler \
 	matrix_mul \
 	heartbeat_variable \
 	md5 \

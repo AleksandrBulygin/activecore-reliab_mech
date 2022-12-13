@@ -43,8 +43,8 @@ sigma
 	, .DEBOUNCER_FACTOR_POW(2)
 	, .delay_test_flag(0)
 	
-	, .mem_init_type("none")
-	, .mem_init_data("C:/Users/admin/Desktop/activecore-master/designs/rtl/sigma/sw/apps/matrix_mul.riscv")
+	, .mem_init_type("elf")
+	, .mem_init_data("E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/sw/apps/irq_handler.riscv")
 	, .mem_size(8192)
 ) sigma
 (
@@ -119,13 +119,8 @@ begin
 	
 	udm.wr32(IRQ_EN_ADDR, 32'h4);
 
-	/*irq_btn = 1'b0;
-	WAIT(100);
-	irq_btn = 1'b0;
-	WAIT(50);
-	*/
 	udm.check();
-	//udm.hreset();
+	
 	WAIT(2000);
 	
 	SW = 8'h0;
@@ -134,30 +129,20 @@ begin
 		
 	udm.rd32(32'h0);
 	
-	WAIT(28);
+	WAIT(30);
 	
 	SW = 8'h1;
 	
-	WAIT(28);
+	WAIT(2000);
 	
-	SW = 8'h0;
-	
-	WAIT(28);
-	
-	SW = 8'h1;
-	
-	WAIT(28);
-	
-	SW = 8'h0;
-	
-	WAIT(28);
+    udm.rd32(CSR_LED_ADDR);
+    
+    WAIT(100);
     
 	$display ("### TEST PROCEDURE FINISHED ###");
 	$stop;
 end
-//
+
 always #`CLK_HALF_PERIOD CLK = ~CLK;
 
-//always #1000000 SW = SW + 8'h1;
-//
 endmodule

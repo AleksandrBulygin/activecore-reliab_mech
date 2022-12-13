@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Mon Oct 24 14:29:02 2022
+# Process ID: 15224
+# Current directory: E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13764 E:\University\University_Projects\2_Magistracy\Security_SoC\activecore-reliab_mech\designs\rtl\sigma\syn\syn_1stage\NEXYS4_DDR\NEXYS4_DDR.xpr
+# Log file: E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/vivado.log
+# Journal file: E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.xpr
+update_compile_order -fileset sources_1
+launch_runs impl_1 -jobs 3
+wait_on_run impl_1
+open_run impl_1
+set_property IOSTANDARD LVCMOS33 [get_ports [list {COLOR_LED[0]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {COLOR_LED[1]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {COLOR_LED[2]}]]
+startgroup
+set_property package_pin "" [get_ports [list  {SW[4]}]]
+place_ports {COLOR_LED[2]} R17
+endgroup
+place_ports {COLOR_LED[1]} G17
+place_ports {COLOR_LED[2]} N16
+place_ports {COLOR_LED[1]} R11
+place_ports {COLOR_LED[0]} G14
+set_property IOSTANDARD LVCMOS33 [get_ports [list {COLOR_LED[2]}]]
+set_property IOSTANDARD LVCMOS33 [get_ports [list {COLOR_LED[2]} {COLOR_LED[1]} {COLOR_LED[0]}]]
+place_ports {SW[4]} R17
+set_property target_constrs_file E:/University/University_Projects/2_Magistracy/Security_SoC/activecore-reliab_mech/designs/rtl/sigma/syn/syn_1stage/NEXYS4_DDR/NEXYS4_DDR.xdc [current_fileset -constrset]
+save_constraints -force
